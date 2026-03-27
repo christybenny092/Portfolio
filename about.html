@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="main">
+        <header>
+            <nav>
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./Project.html">Project</a>
+                <a href="./contact.html">Contact</a>
+            </nav>
+        </header>
+        <section>
+            <div class="geek">
+                <h1>About Me</h1>
+                <p>
+                    I am a motivated Python Full Stack Developer with a Bachelor of Computer Applications degree.<br>
+                    I have hands-on experience in Python, Django, HTML, CSS, JavaScript, and PostgreSQL, and<br>
+                    I enjoy building responsive and user-friendly web applications. I am passionate about learning.
+                </p>
+                <div class="base">
+                    <p>new technologies and creating solutions that improve digital experiences.</p>
+                </div>
+                <div class="container1">
+                    <p>
+                        I enjoy solving problems through clean and efficient code. I am always eager to explore new
+                        tools<br>
+                        and frameworks that help improve my development skills. I like working on projects that
+                        challenge<br>
+                        my creativity and technical abilities. My goal is to grow as a developer and contribute to
+                    </p>
+                </div>
+                <div class="container2">
+                    <p>building innovative and impactful software solutions.</p>
+                </div>
+                <div class="btn">
+                    <a href="https://drive.google.com/file/d/1nynEM-gnXk1SQOvLi3f2Crx_q-Fb8-qo/view?usp=sharing"><button
+                            class="btn1">Download CV</button></a>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        min-height: 100vh;
+        background-color: white;
+    }
+    * {
+        text-decoration: none;
+        color: black;
+    }
+
+    header {
+        display: flex;
+        width: 100%;
+        padding: 15px 20px;
+        box-shadow: 0px 2px 10px rgba(37, 37, 37, 0.2);
+        justify-content: flex-end;
+        position: fixed;
+        z-index: 10;
+        top:-1vh;
+        position: relative;
+        margin-right: 7rem;
+      
+    }
+
+    nav {
+        display: flex;
+        width: 66%;
+        gap: 10%;
+    }
+
+    /* Desktop styles */
+
+    .geek h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 8vh;
+        color:black;
+        font-weight: bolder;
+        top: 8vh;
+        position: relative;
+        font-family: 'Dancing Script', cursive;
+    }
+
+    .geek p {
+        display: flex;
+        top: 8vh;
+        position: relative;
+        font-size: 26px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 8rem;
+        font-family: "Roboto Condensed", sans-serif;
+    }
+
+    .base p {
+        display: flex;
+        top: 4vh;
+        position: relative;
+        font-size: 26px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5rem;
+        font-family: "Roboto Condensed", sans-serif;
+    }
+
+     p {
+        display: flex;
+        top: 6vh;
+        position: relative;
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10rem;
+        font-family:"Roboto Condensed", sans-serif;
+    }
+
+    .container2 p {
+        display: flex;
+        top:4vh;
+        position: relative;
+        font-size: 26px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5rem;
+        font-family:"Roboto Condensed", sans-serif;
+    }
+
+    p {
+        transition: 0.3s;
+    }
+
+
+    h1 {
+        transition: 0.3s;
+    }
+
+
+    .btn {
+        margin-top: 15px;
+    }
+
+    .btn1 {
+        background: linear-gradient(to right, #691010, #100e12);
+        color: white;
+        padding: 10px 25px;
+        border: none;
+        border-radius: 6px;
+        font-family: 'Dancing Script', cursive;
+        font-size: 1.2rem;
+        cursor: pointer;
+        margin-left: 43rem;
+        top: 5vh;
+        position: relative;
+    }
+
+    /* Tablet */
+
+    @media (max-width:1024px) {
+
+        .geek h1 {
+            font-size: 6vh;
+        }
+
+        .geek p,
+        .base p,
+        .container1 p,
+        .container2 p {
+            font-size: 3vh;
+            margin-left: 2rem;
+            text-align: center;
+        }
+
+        .btn1 {
+            margin-left: 35%;
+        }
+
+    }
+
+    /* Mobile */
+
+    @media (max-width:600px) {
+
+        .geek h1 {
+            font-size: 5vh;
+            top: 10vh;
+        }
+
+        .geek p,
+        .base p,
+        .container1 p,
+        .container2 p {
+            font-size: 2.5vh;
+            margin-left: 1rem;
+            padding: 0 10px;
+            text-align: center;
+        }
+
+        .btn1 {
+            margin-left: 30%;
+            font-size: 1rem;
+            padding: 8px 20px;
+        }
+
+    }
+</style>
+
+</html>

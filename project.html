@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Projects</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    background:linear-gradient(135deg,#eef2ff,#ffffff);
+}
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:15px 40px;
+    display:flex;
+    justify-content:flex-end;
+    background:white;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:#333;
+    font-weight:500;
+    position:relative;
+}
+
+nav a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    left:0;
+    bottom:-5px;
+    background:#6c63ff;
+    transition:0.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+.main{
+    padding:120px 20px 40px;
+    text-align:center;
+}
+h1{
+    font-family:'Dancing Script', cursive;
+    font-size:50px;
+    background:linear-gradient(to right,#4f46e5,#9333ea);
+    -webkit-background-clip:text;
+    color:transparent;
+    margin-bottom:40px;
+}
+.card-container{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr); /* FORCE 4 CARDS */
+    gap:30px;
+    max-width:1370px;
+    margin:auto;
+}
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.4s;
+    display:flex;
+    flex-direction:column;
+}
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+.card-content{
+    padding:20px;
+    flex-grow:1;
+}
+
+.card-title{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+.card-text{
+    font-size:14px;
+    color:#555;
+}
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+@media(max-width:1200px){
+    .card-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:900px){
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:500px){
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+
+    header{
+        justify-content:center;
+    }
+
+    nav{
+        gap:15px;
+    }
+
+    h1{
+        font-size:36px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="./index.html">Home</a>
+<a href="./about.html">About</a>
+<a href="./Project.html">Project</a>
+<a href="./contact.html">Contact</a>
+</nav>
+</header>
+
+<div class="main">
+
+<h1>My Projects</h1>
+
+<div class="card-container">
+
+<div class="card">
+<img src="./images/ss1.png">
+<div class="card-content">
+<h2 class="card-title">Watch Website</h2>
+<p class="card-text">
+A modern watch landing page built using HTML and CSS with a clean and responsive design.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="./images/ss2.png">
+<div class="card-content">
+<h2 class="card-title">Stone Paper Scissors</h2>
+<p class="card-text">
+A Python-based game where users can play against the computer with real-time results.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="./images/ss3.jpg">
+<div class="card-content">
+<h2 class="card-title">Car Rental System</h2>
+<p class="card-text">
+A Django web application that allows users to browse, book, and manage rental vehicles.
+</p>
+</div>
+</div>
+
+<div class="card">
+<img src="./images/ss4.png">
+<div class="card-content">
+<h2 class="card-title">Architecture Platform</h2>
+<p class="card-text">
+A Django-based platform for exploring home designs and connecting with architects.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

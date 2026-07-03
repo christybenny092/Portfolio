@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+<style>
+    
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    background:linear-gradient(135deg,#eef2ff,#ffffff);
+}
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:15px 40px;
+    display:flex;
+    justify-content:flex-end;
+    background:white;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    gap:30px;
+}
+
+nav a{
+    color:#333;
+    font-weight:500;
+    position:relative;
+}
+nav a::after{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2px;
+    left:0;
+    bottom:-5px;
+    background:#6c63ff;
+    transition:0.3s;
+}
+
+nav a:hover::after{
+    width:100%;
+}
+.main{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:120px 20px 40px;
+}
+.about-card{
+    max-width:900px;
+    background:rgba(255,255,255,0.6);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 40px rgba(0,0,0,0.1);
+    text-align:center;
+
+    animation:fadeUp 1s ease forwards;
+}
+.about-card h1{
+    font-size:48px;
+    font-family:'Dancing Script', cursive;
+    background:linear-gradient(to right,#4f46e5,#9333ea);
+    -webkit-background-clip:text;
+    color:transparent;
+    margin-bottom:20px;
+}
+.about-card p{
+    font-size:18px;
+    color:#444;
+    line-height:1.7;
+    margin-bottom:15px;
+}
+.btn{
+    margin-top:20px;
+}
+
+.btn1{
+    background:linear-gradient(45deg,#4f46e5,#9333ea);
+    color:white;
+    padding:12px 30px;
+    border:none;
+    border-radius:25px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+.btn1:hover{
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+@media(max-width:768px){
+    header{
+        justify-content:center;
+    }
+
+    nav{
+        gap:15px;
+    }
+
+    .about-card{
+        padding:25px;
+    }
+
+    .about-card h1{
+        font-size:36px;
+    }
+
+    .about-card p{
+        font-size:16px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+<a href="./index.html">Home</a>
+<a href="./about.html">About</a>
+<a href="./Project.html">Project</a>
+<a href="./contact.html">Contact</a>
+</nav>
+
+</header>
+
+<div class="main">
+
+<div class="about-card">
+
+<h1>About Me</h1>
+
+<p>
+I am a motivated Python Full Stack Developer with a Bachelor of Computer Applications degree.
+I have hands-on experience in Python, Django, HTML, CSS, JavaScript, and PostgreSQL.
+</p>
+
+<p>
+I enjoy building responsive and user-friendly web applications and turning ideas into real-world solutions.
+I am passionate about learning new technologies and improving my development skills.
+</p>
+
+<p>
+I love solving problems through clean and efficient code, and I enjoy working on projects that challenge
+both my creativity and technical abilities.
+</p>
+
+<p>
+My goal is to grow as a developer and contribute to building innovative and impactful software solutions.
+</p>
+
+<div class="btn">
+<a href="https://drive.google.com/file/d/1nynEM-gnXk1SQOvLi3f2Crx_q-Fb8-qo/view?usp=sharing" target="_blank">
+<button class="btn1">Download CV</button>
+</a>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>
